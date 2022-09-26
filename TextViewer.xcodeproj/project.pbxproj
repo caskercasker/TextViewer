@@ -17,6 +17,7 @@
 		79227E1628E128FC00BBB6C7 /* TextViewerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79227E1528E128FC00BBB6C7 /* TextViewerTests.swift */; };
 		79227E2028E128FC00BBB6C7 /* TextViewerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79227E1F28E128FC00BBB6C7 /* TextViewerUITests.swift */; };
 		79227E2228E128FC00BBB6C7 /* TextViewerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79227E2128E128FC00BBB6C7 /* TextViewerUITestsLaunchTests.swift */; };
+		79E84C8628E1A70A006F05DB /* sample.txt in Resources */ = {isa = PBXBuildFile; fileRef = 79E84C8528E1A70A006F05DB /* sample.txt */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		79227E1B28E128FC00BBB6C7 /* TextViewerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TextViewerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		79227E1F28E128FC00BBB6C7 /* TextViewerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextViewerUITests.swift; sourceTree = "<group>"; };
 		79227E2128E128FC00BBB6C7 /* TextViewerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextViewerUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		79E84C8528E1A70A006F05DB /* sample.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = sample.txt; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +103,7 @@
 		79227DFA28E128F900BBB6C7 /* TextViewer */ = {
 			isa = PBXGroup;
 			children = (
+				79E84C8228E1A66B006F05DB /* raw */,
 				79227DFB28E128F900BBB6C7 /* AppDelegate.swift */,
 				79227DFD28E128F900BBB6C7 /* SceneDelegate.swift */,
 				79227DFF28E128F900BBB6C7 /* ViewController.swift */,
@@ -128,6 +131,14 @@
 				79227E2128E128FC00BBB6C7 /* TextViewerUITestsLaunchTests.swift */,
 			);
 			path = TextViewerUITests;
+			sourceTree = "<group>";
+		};
+		79E84C8228E1A66B006F05DB /* raw */ = {
+			isa = PBXGroup;
+			children = (
+				79E84C8528E1A70A006F05DB /* sample.txt */,
+			);
+			path = raw;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -236,6 +247,7 @@
 			files = (
 				79227E0B28E128FB00BBB6C7 /* LaunchScreen.storyboard in Resources */,
 				79227E0828E128FB00BBB6C7 /* Assets.xcassets in Resources */,
+				79E84C8628E1A70A006F05DB /* sample.txt in Resources */,
 				79227E0328E128F900BBB6C7 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
