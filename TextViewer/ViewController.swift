@@ -7,13 +7,38 @@
 import Foundation
 import UIKit
 import SwiftUI
-
-class ViewController: UIViewController, UITextFieldDelegate {   //set delegate to class
+protocol SendDelegate{
+    func sendLoadingFiles (text: String)
+    func ppap()
+}
+class ViewController: UIViewController, UITextFieldDelegate,SendDelegate {
+    func ppap() {
+        print("bob")
+    }
+    //var sendDelegate : SendDelegate!
+   
+    var a: String? = ""
     
-    @IBOutlet weak var uiTitle: UILabel!
+    func sendLoadingFiles(text: String) {
+        print("읽고싶은 파일 호출")
+        print("aa")
+        print(text)
+        print("bb")
+        a = text
+    }
+    //set delegate to class
+    @IBAction func btnaction(_ sender: Any) {
+        print("화면이동")
+        let secondVC = self.storyboard?.instantiateViewController(withIdentifier: "SecondViewController") as! SecondViewController
+        //self.present(secondVC, animated:true, completion: nil)
+        //let secondVC =
+        secondVC.sendDelegate = self
+        print("델리게이트 전달")
+        //secondVC?.modalTransitionStyle = .formSheet
+        //self.present(secondVC ?? <#default value#>, animated: true)
+    }
     
-    @IBOutlet weak var TextField: UITextField! //textfield variable
-    
+    @IBOutlet weak var ShowTxtFiles: UIButton!
     @IBOutlet weak var textView: UITextView!
     
     override func viewDidLoad() {
@@ -25,16 +50,30 @@ class ViewController: UIViewController, UITextFieldDelegate {   //set delegate t
 //        """
         //self.uiTitle.text = text
         //self.textView.text = text
-        print("before")
-        text = readTextFile()
-        print("after")
-        print(text)
+        a = "sample.txt"
+        print(a)
+        text = readTextFile(filename: a)
         self.textView.text = text
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         //TextField.delegate = self // set delegate
+        
+        let manager  = FileManager.default
+        
+        guard let url = manager.urls(
+                for: .documentDirectory,
+                in: .userDomainMask)
+            .first else {
+            return
+            
+            
+        }
+            //print(url.path)
+        
+        //manager.createDirectory(at: , withIntermediateDirectories: true)
     }
     
+    // MARK: - read txt file
     func textField(textField: UITextField, shouldChangeCharactersInRange range:NSRange,replacementString string: String) -> Bool
     {
         let maxLength = 10
@@ -44,9 +83,9 @@ class ViewController: UIViewController, UITextFieldDelegate {   //set delegate t
         return newString.count <= maxLength
     }
     
-    func readTextFile() -> String {
+    func readTextFile(filename : String?) -> String {
         var result:String = ""
-        let paths = Bundle.main.path(forResource: "sample.txt", ofType: nil)
+        let paths = Bundle.main.path(forResource: filename, ofType: nil)
         guard paths != nil else {return "fatal"}
         
         do{
@@ -56,11 +95,11 @@ class ViewController: UIViewController, UITextFieldDelegate {   //set delegate t
             print("open failure")
             return "failure"
         }
-        print("open success")
+        //print("open success")
         //print(result)
         return result
     }
-    
-    
+    // MARK: - Filemanager, upload the txt file
+
 }
 

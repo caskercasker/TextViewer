@@ -1,0 +1,19 @@
+➜  TextViewer git:(main) ✗ open /Users/jouhyeon/Library/Developer/CoreSimulator/Devices/A46362A9-C389-40DE-84F9-8DAADF2579AD/data/Containers/Data/Application/DE8E7DD4-34FC-41F7-A7DA-083E20FC85C1/Documents
+
+➜  TextViewer git:(main) ✗ open /Users/jouhyeon/Library/Developer/CoreSimulator/Devices/A46362A9-C389-40DE-84F9-8DAADF2579AD/data/Containers/Data/Application/DE8E7DD4-34FC-41F7-A7DA-083E20FC85C1/Documents
+
+The file /Users/jouhyeon/Library/Developer/CoreSimulator/Devices/A46362A9-C389-40DE-84F9-8DAADF2579AD/data/Containers/Data/Application/DE8E7DD4-34FC-41F7-A7DA-083E20FC85C1/Documents does not exist.
+➜  TextViewer git:(main) ✗ open /Users/jouhyeon/Library/Developer/CoreSimulator/Devices/A46362A9-C389-40DE-84F9-8DAADF2579AD/data/Containers/Data/Application/DE8E7DD4-34FC-41F7-A7DA-083E20FC85C1/Documents
+
+The file /Users/jouhyeon/Library/Developer/CoreSimulator/Devices/A46362A9-C389-40DE-84F9-8DAADF2579AD/data/Containers/Data/Application/DE8E7DD4-34FC-41F7-A7DA-083E20FC85C1/Documents does not exist.
+➜  TextViewer git:(main) ✗ open /Users/jouhyeon/Library/Developer/CoreSimulator/Devices/A46362A9-C389-40DE-84F9-8DAADF2579AD/data/Containers/Data/Application/DE8E7DD4-34FC-41F7-A7DA-083E20FC85C1/Documents
+
+The file /Users/jouhyeon/Library/Developer/CoreSimulator/Devices/A46362A9-C389-40DE-84F9-8DAADF2579AD/data/Containers/Data/Application/DE8E7DD4-34FC-41F7-A7DA-083E20FC85C1/Documents does not exist.
+➜  TextViewer git:(main) ✗ open /Users/jouhyeon/Library/Developer/CoreSimulator/Devices/A46362A9-C389-40DE-84F9-8DAADF2579AD/data/Containers/Data/Application/594BF9FC-8615-4E02-9A60-B3E7158E0CE4/Documents
+
+➜  TextViewer git:(main) ✗ open /Users/jouhyeon/Library/Developer/CoreSimulator/Devices/A46362A9-C389-40DE-84F9-8DAADF2579AD/data/Containers/Data/Application/594BF9FC-8615-4E02-9A60-B3E7158E0CE4/Documents
+
+➜  TextViewer git:(main) ✗ open /Users/jouhyeon/Library/Developer/CoreSimulator/Devices/A46362A9-C389-40DE-84F9-8DAADF2579AD/data/Containers/Data/Application/594BF9FC-8615-4E02-9A60-B3E7158E0CE4/Documents
+
+The file /Users/jouhyeon/Library/Developer/CoreSimulator/Devices/A46362A9-C389-40DE-84F9-8DAADF2579AD/data/Containers/Data/Application/594BF9FC-8615-4E02-9A60-B3E7158E0CE4/Documents does not exist.
+➜  TextViewer git:(main) ✗ open /Users/jouhyeon/Library/Developer/CoreSimulator/Devices/A46362A9-C389-40DE-84F9-8DAADF2579AD/data/Containers/Data/Application/52356F9E-91A7-445F-A7D0-1AC12ACB0F62/Documents
