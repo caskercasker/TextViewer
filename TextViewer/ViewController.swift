@@ -7,35 +7,21 @@
 import Foundation
 import UIKit
 import SwiftUI
-protocol SendDelegate{
-    func sendLoadingFiles (text: String)
-    func ppap()
-}
-class ViewController: UIViewController, UITextFieldDelegate,SendDelegate {
-    func ppap() {
-        print("bob")
-    }
-    //var sendDelegate : SendDelegate!
-   
-    var a: String? = ""
+
+class ViewController: UIViewController, UITextFieldDelegate {
+
+    var txtname: String? = ""
     
+    @IBOutlet weak var optionUpperArea: UIView!
+    
+    @IBOutlet weak var optionBottomArea: UIView!
     func sendLoadingFiles(text: String) {
-        print("읽고싶은 파일 호출")
-        print("aa")
-        print(text)
-        print("bb")
-        a = text
+        txtname = text
+        print("현재 여는 파일")
     }
-    //set delegate to class
+    
     @IBAction func btnaction(_ sender: Any) {
         print("화면이동")
-        let secondVC = self.storyboard?.instantiateViewController(withIdentifier: "SecondViewController") as! SecondViewController
-        //self.present(secondVC, animated:true, completion: nil)
-        //let secondVC =
-        secondVC.sendDelegate = self
-        print("델리게이트 전달")
-        //secondVC?.modalTransitionStyle = .formSheet
-        //self.present(secondVC ?? <#default value#>, animated: true)
     }
     
     @IBOutlet weak var ShowTxtFiles: UIButton!
@@ -43,18 +29,19 @@ class ViewController: UIViewController, UITextFieldDelegate,SendDelegate {
     
     override func viewDidLoad() {
         var cc: Int = 1
+        
         var text: String
-//        text = """
-//        The powerful programming language that is also easy to learn.Swift is a powerfulnd intuitive programming language for iOS, iPadOS, macOS, tvOS, and watchOS. Writing Swift code is interactive and fun, the syntax is concise yet expressive, and Swift includes modern features developers love. Swift code is safe by design and produces software that runs lightning-fast.
-//        Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.
-//        """
-        //self.uiTitle.text = text
-        //self.textView.text = text
-        a = "sample.txt"
-        print(a)
-        text = readTextFile(filename: a)
-        self.textView.text = text
         super.viewDidLoad()
+        
+        //self.textView.text = text
+        print(txtname)
+        print("이름이 온것을 확인")
+        txtname = "sample2.txt"
+        //print(txtname)
+        //txtname = txtname
+        text = readTextFile(filename: txtname)
+        self.textView.text = text
+        //super.viewDidLoad()
         // Do any additional setup after loading the view.
         //TextField.delegate = self // set delegate
         
@@ -65,11 +52,13 @@ class ViewController: UIViewController, UITextFieldDelegate,SendDelegate {
                 in: .userDomainMask)
             .first else {
             return
-            
-            
         }
-            //print(url.path)
         
+        self.optionUpperArea.backgroundColor = UIColor.gray.withAlphaComponent(0.8)
+        self.optionBottomArea.backgroundColor =
+            UIColor.gray.withAlphaComponent(0.8)
+            //print(url.path)
+        //viewWillAppear(true)
         //manager.createDirectory(at: , withIntermediateDirectories: true)
     }
     
@@ -99,6 +88,17 @@ class ViewController: UIViewController, UITextFieldDelegate,SendDelegate {
         //print(result)
         return result
     }
+//
+//    func loadTxtname(){
+//        if let name = txtname{
+//
+//        }
+//    }
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        print("새로운뷰가 나타남")
+    }
+
     // MARK: - Filemanager, upload the txt file
 
 }

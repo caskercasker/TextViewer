@@ -10,17 +10,22 @@ import UIKit
 
 class SecondViewController: UIViewController {
  
-    var sendDelegate : SendDelegate?
+//    var sendDelegate : SendDelegate?
 
     @IBOutlet weak var loadButton: UIButton!
     @IBOutlet weak var tableView: UITableView!
     
     @IBOutlet weak var SecondView: UILabel! //화면 기능 표시
     @IBAction func loadingTxtFiles(_ sender: Any) {
-        print("두번쨰")
-        let textname = "sample.txt"
-        sendDelegate?.sendLoadingFiles(text: textname )
-        print(textname)
+        print("파일명을 보냄")
+        var textname = "sample2.txt"
+        //sendDelegate?.sendLoadingFiles(text: textname )
+        //print(textname)
+        guard let vc = storyboard?.instantiateViewController(withIdentifier: "ViewController") as? ViewController else { return }
+        vc.txtname = textname
+        print(vc.txtname)
+        //viewWillAppear(true)
+        self.present(vc, animated: true, completion: nil)
     }
     
     
@@ -53,7 +58,6 @@ class SecondViewController: UIViewController {
             print ("handle")
         }
 
-        sendDelegate?.ppap()
         print(exist)
         do {
             try
@@ -72,6 +76,7 @@ class SecondViewController: UIViewController {
         
  
     }
+    
     /*
     // MARK: - Navigation
 
