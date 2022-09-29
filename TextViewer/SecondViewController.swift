@@ -16,6 +16,8 @@ class SecondViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     
     @IBOutlet weak var SecondView: UILabel! //화면 기능 표시
+    
+    // MARK: Select which txt filed will be shown
     @IBAction func loadingTxtFiles(_ sender: Any) {
         print("파일명을 보냄")
         var textname = "sample2.txt"
@@ -77,6 +79,10 @@ class SecondViewController: UIViewController {
  
     }
     
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        print("Touch accepcted")
+    }
+
     /*
     // MARK: - Navigation
 

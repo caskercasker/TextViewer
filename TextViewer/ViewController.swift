@@ -28,22 +28,18 @@ class ViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var textView: UITextView!
     
     override func viewDidLoad() {
-        var cc: Int = 1
-        
-        var text: String
         super.viewDidLoad()
+
+        var cc: Int = 1
+        var text: String
         
         //self.textView.text = text
         print(txtname)
         print("이름이 온것을 확인")
         txtname = "sample2.txt"
-        //print(txtname)
-        //txtname = txtname
+
         text = readTextFile(filename: txtname)
         self.textView.text = text
-        //super.viewDidLoad()
-        // Do any additional setup after loading the view.
-        //TextField.delegate = self // set delegate
         
         let manager  = FileManager.default
         
@@ -53,6 +49,9 @@ class ViewController: UIViewController, UITextFieldDelegate {
             .first else {
             return
         }
+        self.textView.isUserInteractionEnabled = false
+        self.textView.isEditable = false
+        
         
         self.optionUpperArea.backgroundColor = UIColor.gray.withAlphaComponent(0.8)
         self.optionBottomArea.backgroundColor =
@@ -62,7 +61,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
         //manager.createDirectory(at: , withIntermediateDirectories: true)
     }
     
-    // MARK: - read txt file
+    // MARK: - text field seeting
     func textField(textField: UITextField, shouldChangeCharactersInRange range:NSRange,replacementString string: String) -> Bool
     {
         let maxLength = 10
@@ -72,6 +71,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
         return newString.count <= maxLength
     }
     
+    // MARK: Read text file
     func readTextFile(filename : String?) -> String {
         var result:String = ""
         let paths = Bundle.main.path(forResource: filename, ofType: nil)
@@ -88,15 +88,16 @@ class ViewController: UIViewController, UITextFieldDelegate {
         //print(result)
         return result
     }
-//
-//    func loadTxtname(){
-//        if let name = txtname{
-//
-//        }
-//    }
+
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         print("새로운뷰가 나타남")
+    }
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        print("Touch accepcted")
+        self.optionUpperArea.backgroundColor = UIColor.gray.withAlphaComponent(0)
+
     }
 
     // MARK: - Filemanager, upload the txt file
