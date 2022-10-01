@@ -35,6 +35,10 @@ class SecondViewController: UIViewController {
         super.viewDidLoad()
         self.SecondView.text = "PPAP"
         // Do any additional setup after loading the view.
+//        
+//        let myNewView=UIView(frame: CGRect(x: 10, y: 100, width: 300, height: 200))
+//        myNewView.backgroundColor=UIColor.red
+//        self.view.addSubview(myNewView)
         
         let manager  = FileManager.default
         //let listofFiles = FileManager.contentsOfDirectory(<#T##self: FileManager##FileManager#>)

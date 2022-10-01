@@ -8,13 +8,18 @@ import Foundation
 import UIKit
 import SwiftUI
 
+class SubView: UIView{
+    @IBOutlet weak var OptionButton: UIButton!
+    @IBOutlet weak var OpionLabel : UILabel?
+    
+}
 class ViewController: UIViewController, UITextFieldDelegate {
 
     var txtname: String? = ""
     
     @IBOutlet weak var optionUpperArea: UIView!
-    
     @IBOutlet weak var optionBottomArea: UIView!
+    
     func sendLoadingFiles(text: String) {
         txtname = text
         print("현재 여는 파일")
@@ -49,6 +54,17 @@ class ViewController: UIViewController, UITextFieldDelegate {
             .first else {
             return
         }
+        
+        let testview = SubView(frame: CGRect(x: 10, y: 100, width: 300, height: 200))
+        testview.backgroundColor = UIColor.red
+        //testview.OpionLabel?.text = "ppap"
+        self.view.addSubview(testview)
+        
+        //testview.OptionButton2.text = "PPAP"
+        //let myButton  = SubView.optionbuton
+        
+        //self.view.addSubview(button)
+        
         self.textView.isUserInteractionEnabled = false
         self.textView.isEditable = false
         
@@ -59,6 +75,15 @@ class ViewController: UIViewController, UITextFieldDelegate {
             //print(url.path)
         //viewWillAppear(true)
         //manager.createDirectory(at: , withIntermediateDirectories: true)
+        
+        //UI view 에 버튼 종속시키기
+        
+//        let myNewView=UIView(frame: CGRect(x: 10, y: 100, width: 300, height: 200))
+//        myNewView.backgroundColor=UIColor.red
+//        self.view.addSubview(myNewView)
+        
+        
+
     }
     
     // MARK: - text field seeting
@@ -94,10 +119,30 @@ class ViewController: UIViewController, UITextFieldDelegate {
         print("새로운뷰가 나타남")
     }
     
+    var count : Int = 0
+
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         print("Touch accepcted")
-        self.optionUpperArea.backgroundColor = UIColor.gray.withAlphaComponent(0)
+        count += 1
 
+        if count%2 == 0{
+            self.optionUpperArea.backgroundColor = UIColor.gray.withAlphaComponent(0)
+            //self.optionBottomArea.backgroundColor = UIColor.gray.withAlphaComponent(0)
+            //self.optionBottomArea.removeFromSuperview()
+            self.optionBottomArea.isHidden = true
+
+        } else {
+            self.optionUpperArea.backgroundColor = UIColor.gray.withAlphaComponent(0.8)
+            //self.optionBottomArea.backgroundColor = UIColor.gray.withAlphaComponent(0.8)
+            self.optionBottomArea.isHidden = false
+
+        }
+        //self.optionUpperArea.backgroundColor = UIColor.gray.withAlphaComponent(0)
+        print(count/2)
+    }
+    
+    override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
+        print("Touch end")
     }
 
     // MARK: - Filemanager, upload the txt file
