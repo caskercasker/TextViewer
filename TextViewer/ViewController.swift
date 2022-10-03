@@ -54,11 +54,11 @@ class ViewController: UIViewController, UITextFieldDelegate {
             .first else {
             return
         }
-        
+        //temporary view tester
         let testview = SubView(frame: CGRect(x: 10, y: 100, width: 300, height: 200))
         testview.backgroundColor = UIColor.red
         //testview.OpionLabel?.text = "ppap"
-        self.view.addSubview(testview)
+        //self.view.addSubview(testview)
         
         //testview.OptionButton2.text = "PPAP"
         //let myButton  = SubView.optionbuton

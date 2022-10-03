@@ -78,6 +78,7 @@ class SecondViewController: UIViewController {
             print("none")
         }
         //print(list)
+        print(list.count)
         self.SecondView.text = list[2]
         
  
