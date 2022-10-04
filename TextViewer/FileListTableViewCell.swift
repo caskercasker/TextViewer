@@ -9,8 +9,7 @@ import UIKit
 
 class FileListTableViewCell: UITableViewCell {
 
-    @IBOutlet weak var listLabel: UILabel!
-    @IBOutlet weak var listButton: UIButton!
+
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

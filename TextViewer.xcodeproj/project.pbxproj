@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		791B021228E2A33B007DF059 /* UploadTxtFiles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 791B021128E2A33B007DF059 /* UploadTxtFiles.swift */; };
 		791B021428E2A4D0007DF059 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 791B021328E2A4D0007DF059 /* SecondViewController.swift */; };
-		791B021828E2CE09007DF059 /* FileListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 791B021728E2CE09007DF059 /* FileListTableViewCell.swift */; };
 		791B021A28E2D5E3007DF059 /* sample2.txt in Resources */ = {isa = PBXBuildFile; fileRef = 791B021928E2D5E2007DF059 /* sample2.txt */; };
 		79227DFC28E128F900BBB6C7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79227DFB28E128F900BBB6C7 /* AppDelegate.swift */; };
 		79227DFE28E128F900BBB6C7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79227DFD28E128F900BBB6C7 /* SceneDelegate.swift */; };
@@ -22,6 +21,7 @@
 		79227E2028E128FC00BBB6C7 /* TextViewerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79227E1F28E128FC00BBB6C7 /* TextViewerUITests.swift */; };
 		79227E2228E128FC00BBB6C7 /* TextViewerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79227E2128E128FC00BBB6C7 /* TextViewerUITestsLaunchTests.swift */; };
 		79E84C8628E1A70A006F05DB /* sample.txt in Resources */ = {isa = PBXBuildFile; fileRef = 79E84C8528E1A70A006F05DB /* sample.txt */; };
+		79F444A628EBC1CE008C50CE /* TxtTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79F444A528EBC1CE008C50CE /* TxtTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,7 +44,6 @@
 /* Begin PBXFileReference section */
 		791B021128E2A33B007DF059 /* UploadTxtFiles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadTxtFiles.swift; sourceTree = "<group>"; };
 		791B021328E2A4D0007DF059 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
-		791B021728E2CE09007DF059 /* FileListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileListTableViewCell.swift; sourceTree = "<group>"; };
 		791B021928E2D5E2007DF059 /* sample2.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = sample2.txt; sourceTree = SOURCE_ROOT; };
 		79227DF828E128F900BBB6C7 /* TextViewer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TextViewer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		79227DFB28E128F900BBB6C7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -61,6 +60,7 @@
 		79227E1F28E128FC00BBB6C7 /* TextViewerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextViewerUITests.swift; sourceTree = "<group>"; };
 		79227E2128E128FC00BBB6C7 /* TextViewerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextViewerUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		79E84C8528E1A70A006F05DB /* sample.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = sample.txt; sourceTree = SOURCE_ROOT; };
+		79F444A528EBC1CE008C50CE /* TxtTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TxtTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,7 +122,7 @@
 				79227E0428E128F900BBB6C7 /* TextViewer.xcdatamodeld */,
 				791B021128E2A33B007DF059 /* UploadTxtFiles.swift */,
 				791B021328E2A4D0007DF059 /* SecondViewController.swift */,
-				791B021728E2CE09007DF059 /* FileListTableViewCell.swift */,
+				79F444A528EBC1CE008C50CE /* TxtTableViewCell.swift */,
 			);
 			path = TextViewer;
 			sourceTree = "<group>";
@@ -290,7 +290,7 @@
 				79227E0028E128F900BBB6C7 /* ViewController.swift in Sources */,
 				79227DFC28E128F900BBB6C7 /* AppDelegate.swift in Sources */,
 				79227E0628E128F900BBB6C7 /* TextViewer.xcdatamodeld in Sources */,
-				791B021828E2CE09007DF059 /* FileListTableViewCell.swift in Sources */,
+				79F444A628EBC1CE008C50CE /* TxtTableViewCell.swift in Sources */,
 				79227DFE28E128F900BBB6C7 /* SceneDelegate.swift in Sources */,
 				791B021228E2A33B007DF059 /* UploadTxtFiles.swift in Sources */,
 			);
