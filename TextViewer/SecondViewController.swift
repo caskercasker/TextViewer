@@ -10,7 +10,7 @@ import UIKit
 
 class SecondViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
-    let label = ["1","2","3","4","5"]
+    //let label = ["1","2","3","4","5"]
     var list : [String] = []
 
     func numberOfSections(in tableView: UITableView) -> Int {
@@ -26,10 +26,19 @@ class SecondViewController: UIViewController, UITableViewDataSource, UITableView
         cell.SecondView?.text = list[indexPath.row]
         //assert(cell.loadingTxtFile == nil, "button is nil")
         //assert(cell.SecondView == nil, "label is nil")
-       
-        print(label[indexPath.row])
+        // 데이터는 여기에 있고
+        //print(label[indexPath.row])
         
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        guard let vc = storyboard?.instantiateViewController(withIdentifier: "ViewController") as? ViewController else { return }
+        vc.txtname = list[indexPath.row]
+        print(vc.txtname)
+        //viewWillAppear(true)
+        self.present(vc, animated: true, completion: nil)    
+        
     }
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
             return 105
@@ -47,8 +56,7 @@ class SecondViewController: UIViewController, UITableViewDataSource, UITableView
         vc.txtname = textname
         print(vc.txtname)
         //viewWillAppear(true)
-        self.present(vc, animated: true, completion: nil)
-    }
+        self.present(vc, animated: true, completion: nil)    }
     
     // MARK: Select which txt filed will be shown
 //    @IBAction func loadingTxtFiles(_ sender: Any) {
@@ -85,9 +93,10 @@ class SecondViewController: UIViewController, UITableViewDataSource, UITableView
             return
             
         }
-        let emptypath : String = "/Users/jouhyeon/Downloads/무제 폴더"
+        let emptypath : String = "/Users/jouhyeon/Downloads/무제"
         //var list : [String] = []
-        //print(url.path)
+        print(url.path)
+        print(url.path)
         //exist = manager.fileExists(atPath: url.path)
         exist = manager.fileExists(atPath: emptypath)
         
@@ -116,6 +125,10 @@ class SecondViewController: UIViewController, UITableViewDataSource, UITableView
         print(list.count)
         //self.SecondView.text = list[2]
         
+        //ShowTxtFiles.isUserInteractionEnabled = true
+        //.isUserInteractionEnabled = true
+        //ShowTxtFiles.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(labelTapped(_:))))
+        
         
         ShowTxtFiles.delegate = self
         ShowTxtFiles.dataSource = self
@@ -127,6 +140,9 @@ class SecondViewController: UIViewController, UITableViewDataSource, UITableView
         print("Touch accepcted")
     }
 
+//    @objc func labelTapped (_ sender: UITapGestureRecognizer){
+//        print("label tapped")
+//    }
     /*
     // MARK: - Navigation
 

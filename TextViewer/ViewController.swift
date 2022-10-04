@@ -41,7 +41,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
         //self.textView.text = text
         print(txtname)
         print("이름이 온것을 확인")
-        txtname = "sample2.txt"
+        //txtname = "sample.txt"
 
         text = readTextFile(filename: txtname)
         self.textView.text = text

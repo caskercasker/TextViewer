@@ -105,13 +105,14 @@
                                                     <buttonConfiguration key="configuration" style="plain" title="Button"/>
                                                 </button>
                                             </subviews>
+                                            <gestureRecognizers/>
                                         </tableViewCellContentView>
                                         <accessibility key="accessibilityConfiguration" identifier="Cell">
                                             <bool key="isElement" value="YES"/>
                                         </accessibility>
                                         <connections>
                                             <outlet property="SecondView" destination="ddp-vE-WWd" id="gsN-Hf-hYI"/>
-                                            <outlet property="loadingTxtFile" destination="fHr-AE-bhX" id="UKd-jx-O67"/>
+                                            <outlet property="loadingTxtFile" destination="fHr-AE-bhX" id="eJU-7x-cIR"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
