@@ -46,6 +46,7 @@ class SecondViewController: UIViewController, UITableViewDataSource, UITableView
  //    var sendDelegate : SendDelegate?
     
     @IBOutlet weak var ShowTxtFiles: UITableView!
+    @IBOutlet weak var GoToDownloads: UIView!
     
     @IBAction func loadingTxtFile(_ sender: Any) {
         print("파일명을 보냄")
@@ -129,6 +130,8 @@ class SecondViewController: UIViewController, UITableViewDataSource, UITableView
         //.isUserInteractionEnabled = true
         //ShowTxtFiles.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(labelTapped(_:))))
         
+        self.GoToDownloads.backgroundColor = .systemMint
+        //self.GoToDownloads.frame(maxWidth: .infinity)
         
         ShowTxtFiles.delegate = self
         ShowTxtFiles.dataSource = self

@@ -20,6 +20,7 @@
 		79227E1628E128FC00BBB6C7 /* TextViewerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79227E1528E128FC00BBB6C7 /* TextViewerTests.swift */; };
 		79227E2028E128FC00BBB6C7 /* TextViewerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79227E1F28E128FC00BBB6C7 /* TextViewerUITests.swift */; };
 		79227E2228E128FC00BBB6C7 /* TextViewerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79227E2128E128FC00BBB6C7 /* TextViewerUITestsLaunchTests.swift */; };
+		794E3F2028ED44EE00D62CF7 /* NavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 794E3F1F28ED44EE00D62CF7 /* NavigationViewController.swift */; };
 		79E84C8628E1A70A006F05DB /* sample.txt in Resources */ = {isa = PBXBuildFile; fileRef = 79E84C8528E1A70A006F05DB /* sample.txt */; };
 		79F444A628EBC1CE008C50CE /* TxtTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79F444A528EBC1CE008C50CE /* TxtTableViewCell.swift */; };
 /* End PBXBuildFile section */
@@ -59,6 +60,7 @@
 		79227E1B28E128FC00BBB6C7 /* TextViewerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TextViewerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		79227E1F28E128FC00BBB6C7 /* TextViewerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextViewerUITests.swift; sourceTree = "<group>"; };
 		79227E2128E128FC00BBB6C7 /* TextViewerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextViewerUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		794E3F1F28ED44EE00D62CF7 /* NavigationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationViewController.swift; sourceTree = "<group>"; };
 		79E84C8528E1A70A006F05DB /* sample.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = sample.txt; sourceTree = SOURCE_ROOT; };
 		79F444A528EBC1CE008C50CE /* TxtTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TxtTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -123,6 +125,7 @@
 				791B021128E2A33B007DF059 /* UploadTxtFiles.swift */,
 				791B021328E2A4D0007DF059 /* SecondViewController.swift */,
 				79F444A528EBC1CE008C50CE /* TxtTableViewCell.swift */,
+				794E3F1F28ED44EE00D62CF7 /* NavigationViewController.swift */,
 			);
 			path = TextViewer;
 			sourceTree = "<group>";
@@ -286,6 +289,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				794E3F2028ED44EE00D62CF7 /* NavigationViewController.swift in Sources */,
 				791B021428E2A4D0007DF059 /* SecondViewController.swift in Sources */,
 				79227E0028E128F900BBB6C7 /* ViewController.swift in Sources */,
 				79227DFC28E128F900BBB6C7 /* AppDelegate.swift in Sources */,
