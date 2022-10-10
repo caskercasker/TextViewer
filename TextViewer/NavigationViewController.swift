@@ -6,6 +6,10 @@
 //
 
 import UIKit
+import Foundation
+
+
+
 
 class NavigationViewController: UIViewController {
 
@@ -13,16 +17,38 @@ class NavigationViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        let fileManager = FileManager.default
+        let directoryURL = URL(string: "folderPathHere")!
+
+        do {
+            let directoryContents = try fileManager.contentsOfDirectory(at: directoryURL, includingPropertiesForKeys: nil, options: [.skipsSubdirectoryDescendants, .skipsHiddenFiles])
+            for url in directoryContents {
+                let fileName = fileManager.displayName(atPath: url.absoluteString)
+                print(fileName)
+            }
+        } catch let error {
+            let directoryName = fileManager.displayName(atPath: directoryURL.absoluteString)
+            print("Couldnt get contents of \(directoryName): \(error.localizedDescription)")
+        }
         
+        ///
       
+        
     }
     @IBAction func didTpaButton(){
-        let vc = UIViewController()
-        vc.view.backgroundColor = .systemPink
+//        let vc = UIViewController()
+//        vc.view.backgroundColor = .systemPink
+//
+//        navigationController?.pushViewController(vc, animated: true )
+//        if let url = URL(string: "itms-apps://itunes.apple.com/app/id1629135515") {
+//            UIApplication.shared.open(url)
+//        }
+        print("open icloud app")
         
-        navigationController?.pushViewController(vc, animated: true )
+        
     }
 
+ 
     /*
     // MARK: - Navigation
 

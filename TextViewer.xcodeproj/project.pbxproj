@@ -21,6 +21,7 @@
 		79227E2028E128FC00BBB6C7 /* TextViewerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79227E1F28E128FC00BBB6C7 /* TextViewerUITests.swift */; };
 		79227E2228E128FC00BBB6C7 /* TextViewerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79227E2128E128FC00BBB6C7 /* TextViewerUITestsLaunchTests.swift */; };
 		794E3F2028ED44EE00D62CF7 /* NavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 794E3F1F28ED44EE00D62CF7 /* NavigationViewController.swift */; };
+		79D0781F28F3EE9700142383 /* iCloudViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79D0781E28F3EE9700142383 /* iCloudViewController.swift */; };
 		79E84C8628E1A70A006F05DB /* sample.txt in Resources */ = {isa = PBXBuildFile; fileRef = 79E84C8528E1A70A006F05DB /* sample.txt */; };
 		79F444A628EBC1CE008C50CE /* TxtTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79F444A528EBC1CE008C50CE /* TxtTableViewCell.swift */; };
 /* End PBXBuildFile section */
@@ -43,6 +44,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7903362D28F3E20100671935 /* TextViewer.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TextViewer.entitlements; sourceTree = "<group>"; };
 		791B021128E2A33B007DF059 /* UploadTxtFiles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadTxtFiles.swift; sourceTree = "<group>"; };
 		791B021328E2A4D0007DF059 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		791B021928E2D5E2007DF059 /* sample2.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = sample2.txt; sourceTree = SOURCE_ROOT; };
@@ -61,6 +63,7 @@
 		79227E1F28E128FC00BBB6C7 /* TextViewerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextViewerUITests.swift; sourceTree = "<group>"; };
 		79227E2128E128FC00BBB6C7 /* TextViewerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextViewerUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		794E3F1F28ED44EE00D62CF7 /* NavigationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationViewController.swift; sourceTree = "<group>"; };
+		79D0781E28F3EE9700142383 /* iCloudViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iCloudViewController.swift; sourceTree = "<group>"; };
 		79E84C8528E1A70A006F05DB /* sample.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = sample.txt; sourceTree = SOURCE_ROOT; };
 		79F444A528EBC1CE008C50CE /* TxtTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TxtTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -113,6 +116,7 @@
 		79227DFA28E128F900BBB6C7 /* TextViewer */ = {
 			isa = PBXGroup;
 			children = (
+				7903362D28F3E20100671935 /* TextViewer.entitlements */,
 				79E84C8228E1A66B006F05DB /* raw */,
 				79227DFB28E128F900BBB6C7 /* AppDelegate.swift */,
 				79227DFD28E128F900BBB6C7 /* SceneDelegate.swift */,
@@ -150,6 +154,7 @@
 		79E84C8228E1A66B006F05DB /* raw */ = {
 			isa = PBXGroup;
 			children = (
+				79D0781E28F3EE9700142383 /* iCloudViewController.swift */,
 				791B021928E2D5E2007DF059 /* sample2.txt */,
 				79E84C8528E1A70A006F05DB /* sample.txt */,
 			);
@@ -291,6 +296,7 @@
 			files = (
 				794E3F2028ED44EE00D62CF7 /* NavigationViewController.swift in Sources */,
 				791B021428E2A4D0007DF059 /* SecondViewController.swift in Sources */,
+				79D0781F28F3EE9700142383 /* iCloudViewController.swift in Sources */,
 				79227E0028E128F900BBB6C7 /* ViewController.swift in Sources */,
 				79227DFC28E128F900BBB6C7 /* AppDelegate.swift in Sources */,
 				79227E0628E128F900BBB6C7 /* TextViewer.xcdatamodeld in Sources */,
@@ -471,8 +477,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = TextViewer/TextViewer.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6M929WP488;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = TextViewer/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -498,8 +506,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = TextViewer/TextViewer.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6M929WP488;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = TextViewer/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
