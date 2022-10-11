@@ -22,30 +22,34 @@ class iCloudViewController: UIViewController, UIDocumentPickerDelegate {
         present(documentPickerController, animated: true, completion: nil)
         print("open icloud")
         // Do any additional setup after loading the view.
-        
-        let fileManager = FileManager.default
-        // Browse your icloud container to find the file you want
-        if let icloudFolderURL = fileManager.url(forUbiquityContainerIdentifier: nil)?.appendingPathComponent("Documents"),
-        let urls = try? fileManager.contentsOfDirectory(at: icloudFolderURL, includingPropertiesForKeys: nil, options: []) {
-          
-          // Here select the file url you are interested in (for the exemple we take the first)
-          if let myURL = urls.first {
-            // We have our url
-            var lastPathComponent = myURL.lastPathComponent
-            if lastPathComponent.contains(".icloud") {
-              // Delete the "." which is at the beginning of the file name
-              lastPathComponent.removeFirst()
-              let folderPath = myURL.deletingLastPathComponent().path
-              let downloadedFilePath = folderPath + "/" + lastPathComponent.replacingOccurrences(of: ".icloud", with: "")
-              var isDownloaded = false
-              while !isDownloaded {
-                if fileManager.fileExists(atPath: downloadedFilePath) {
-                  isDownloaded = true
-                }
-              }
-              // Do what you want with your downloaded file at path contains in variable "downloadedFilePath"
-            }
+        print(documentPickerController.directoryURL)
+
+        let driveURL = FileManager.default.url(forUbiquityContainerIdentifier: nil)?.appendingPathComponent("Documents")
+          if let unwrappedFU = driveURL {
+              print("iCloud available")
+              let fileURL = driveURL!.appendingPathComponent("test.txt")
+              try? "Hello word".data(using: .utf8)?.write(to: fileURL)
+          } else {
+              print("iCloud not available")
           }
+    }
+    func documentPicker(_ controller: UIDocumentPickerViewController, didPickDocumentAt url: URL) {
+        // Available from iOS 8.0 to iOS 11.0
+        self.handleFileSelection(inUrl: url)// Here url is document's URL
+    }
+
+    func documentPicker(_ controller: UIDocumentPickerViewController, didPickDocumentsAt urls: [URL]) {
+        // Available from iOS 11.0
+        self.handleFileSelection(inUrl: urls.first!)  // Here urls is array of URLs
+    }
+
+    private func handleFileSelection(inUrl:URL) -> Void {
+        do {
+         // inUrl is the document's URL
+            let data = try Data(contentsOf: inUrl) // Getting file data here
+        } catch {
+            //Log(message: "document loading error")
+            print("document loading error")
         }
     }
     
