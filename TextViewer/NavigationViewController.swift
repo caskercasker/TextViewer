@@ -9,8 +9,6 @@ import UIKit
 import Foundation
 
 
-
-
 class NavigationViewController: UIViewController {
 
     override func viewDidLoad() {
@@ -30,9 +28,6 @@ class NavigationViewController: UIViewController {
             let directoryName = fileManager.displayName(atPath: directoryURL.absoluteString)
             print("Couldnt get contents of \(directoryName): \(error.localizedDescription)")
         }
-        
-        ///
-      
         
     }
     @IBAction func didTpaButton(){

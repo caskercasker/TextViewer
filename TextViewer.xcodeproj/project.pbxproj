@@ -119,6 +119,7 @@
 				7903362D28F3E20100671935 /* TextViewer.entitlements */,
 				79E84C8228E1A66B006F05DB /* raw */,
 				79227DFB28E128F900BBB6C7 /* AppDelegate.swift */,
+				79D0781E28F3EE9700142383 /* iCloudViewController.swift */,
 				79227DFD28E128F900BBB6C7 /* SceneDelegate.swift */,
 				79227DFF28E128F900BBB6C7 /* ViewController.swift */,
 				79227E0128E128F900BBB6C7 /* Main.storyboard */,
@@ -154,7 +155,6 @@
 		79E84C8228E1A66B006F05DB /* raw */ = {
 			isa = PBXGroup;
 			children = (
-				79D0781E28F3EE9700142383 /* iCloudViewController.swift */,
 				791B021928E2D5E2007DF059 /* sample2.txt */,
 				79E84C8528E1A70A006F05DB /* sample.txt */,
 			);
