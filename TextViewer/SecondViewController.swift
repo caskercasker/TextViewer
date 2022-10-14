@@ -35,7 +35,7 @@ class SecondViewController: UIViewController, UITableViewDataSource, UITableView
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         guard let vc = storyboard?.instantiateViewController(withIdentifier: "ViewController") as? ViewController else { return }
         vc.txtname = list[indexPath.row]
-        print(vc.txtname)
+        //print(vc.txtname)
         //viewWillAppear(true)
         self.present(vc, animated: true, completion: nil)    
         
@@ -98,8 +98,8 @@ class SecondViewController: UIViewController, UITableViewDataSource, UITableView
         //var list : [String] = []
         print(url.path)
         print(url.path)
-        //exist = manager.fileExists(atPath: url.path)
-        exist = manager.fileExists(atPath: emptypath)
+        exist = manager.fileExists(atPath: url.path)
+        //exist = manager.fileExists(atPath: emptypath)
         
         do {
             try

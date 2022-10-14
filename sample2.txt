@@ -1,19 +1,263 @@
-➜  TextViewer git:(main) ✗ open /Users/jouhyeon/Library/Developer/CoreSimulator/Devices/A46362A9-C389-40DE-84F9-8DAADF2579AD/data/Containers/Data/Application/DE8E7DD4-34FC-41F7-A7DA-083E20FC85C1/Documents
+Last login: Tue Oct  4 10:27:04 on console
+➜  ~ git:(master) ✗ ls
+Applications        Movies              SQL                 oracle
+Desktop             Music               apah1.txt           projects
+Documents           Pictures            eclipse             user
+Downloads           Public              eclipse-workspace   usr
+Library             RustPython          git                 예전.txt
+➜  ~ git:(master) ✗ cd downloads
+➜  downloads git:(master) ✗ ls
+2021 컨트리뷰션 아카데미_프로젝트 가이드_정윤원.pdf
+57321346.html
+Hammerspoon-0.9.97.zip
+Hammerspoon.app
+IE002452730_STD.jpg
+IOS  참고파일
+KakaoTalk_Photo_2022-09-28-15-35-41.jpeg
+KakaoTalk_Photo_2022-09-28-15-35-50.jpeg
+SmoothMouse-1.0.10.zip
+SmoothMouse.pkg
+TextViewer
+Windows iso
+macsfancontrol.zip
+sheevergaming.html
+tutorial
+무제 폴더
+과거 청산
+입사지원서_양식_조우현.docx
+➜  downloads git:(master) ✗ cd textviewer
+➜  textviewer git:(main) ✗ ls
+README.md            TextViewerTests      sample2.txt
+TextViewer           TextViewerUITests
+TextViewer.xcodeproj sample.txt
+➜  textviewer git:(main) ✗ git add -u
+➜  textviewer git:(main) ✗ git commit "table view cell complete"
+error: pathspec 'table view cell complete' did not match any file(s) known to git
+➜  textviewer git:(main) ✗ git commit -m "table view cell complete"
+[main a42510d] table view cell complete
+ 6 files changed, 122 insertions(+), 42 deletions(-)
+ create mode 100644 TextViewer/TxtTableViewCell.swift
+➜  textviewer git:(main) git push origin main                    
+warning: redirecting to https://github.com/caskercasker/TextViewer/
+Enumerating objects: 19, done.
+Counting objects: 100% (19/19), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (11/11), done.
+Writing objects: 100% (11/11), 2.59 KiB | 2.59 MiB/s, done.
+Total 11 (delta 9), reused 0 (delta 0)
+remote: Resolving deltas: 100% (9/9), completed with 7 local objects.
+To http://github.com/caskercasker/TextViewer
+   fd12797..a42510d  main -> main
+➜  textviewer git:(main) open /Users/jouhyeon/Library/Developer/CoreSimulator/Devices/A46362A9-C389-40DE-84F9-8DAADF2579AD/data/Containers/Data/Application/16CA2B7B-D0AC-4096-B8ED-88F2009DDEED/Documents
 
-➜  TextViewer git:(main) ✗ open /Users/jouhyeon/Library/Developer/CoreSimulator/Devices/A46362A9-C389-40DE-84F9-8DAADF2579AD/data/Containers/Data/Application/DE8E7DD4-34FC-41F7-A7DA-083E20FC85C1/Documents
+➜  textviewer git:(main) ✗ 
 
-The file /Users/jouhyeon/Library/Developer/CoreSimulator/Devices/A46362A9-C389-40DE-84F9-8DAADF2579AD/data/Containers/Data/Application/DE8E7DD4-34FC-41F7-A7DA-083E20FC85C1/Documents does not exist.
-➜  TextViewer git:(main) ✗ open /Users/jouhyeon/Library/Developer/CoreSimulator/Devices/A46362A9-C389-40DE-84F9-8DAADF2579AD/data/Containers/Data/Application/DE8E7DD4-34FC-41F7-A7DA-083E20FC85C1/Documents
+Last login: Tue Oct  4 10:27:04 on console
+➜  ~ git:(master) ✗ ls
+Applications        Movies              SQL                 oracle
+Desktop             Music               apah1.txt           projects
+Documents           Pictures            eclipse             user
+Downloads           Public              eclipse-workspace   usr
+Library             RustPython          git                 예전.txt
+➜  ~ git:(master) ✗ cd downloads
+➜  downloads git:(master) ✗ ls
+2021 컨트리뷰션 아카데미_프로젝트 가이드_정윤원.pdf
+57321346.html
+Hammerspoon-0.9.97.zip
+Hammerspoon.app
+IE002452730_STD.jpg
+IOS  참고파일
+KakaoTalk_Photo_2022-09-28-15-35-41.jpeg
+KakaoTalk_Photo_2022-09-28-15-35-50.jpeg
+SmoothMouse-1.0.10.zip
+SmoothMouse.pkg
+TextViewer
+Windows iso
+macsfancontrol.zip
+sheevergaming.html
+tutorial
+무제 폴더
+과거 청산
+입사지원서_양식_조우현.docx
+➜  downloads git:(master) ✗ cd textviewer
+➜  textviewer git:(main) ✗ ls
+README.md            TextViewerTests      sample2.txt
+TextViewer           TextViewerUITests
+TextViewer.xcodeproj sample.txt
+➜  textviewer git:(main) ✗ git add -u
+➜  textviewer git:(main) ✗ git commit "table view cell complete"
+error: pathspec 'table view cell complete' did not match any file(s) known to git
+➜  textviewer git:(main) ✗ git commit -m "table view cell complete"
+[main a42510d] table view cell complete
+ 6 files changed, 122 insertions(+), 42 deletions(-)
+ create mode 100644 TextViewer/TxtTableViewCell.swift
+➜  textviewer git:(main) git push origin main                    
+warning: redirecting to https://github.com/caskercasker/TextViewer/
+Enumerating objects: 19, done.
+Counting objects: 100% (19/19), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (11/11), done.
+Writing objects: 100% (11/11), 2.59 KiB | 2.59 MiB/s, done.
+Total 11 (delta 9), reused 0 (delta 0)
+remote: Resolving deltas: 100% (9/9), completed with 7 local objects.
+To http://github.com/caskercasker/TextViewer
+   fd12797..a42510d  main -> main
+➜  textviewer git:(main) open /Users/jouhyeon/Library/Developer/CoreSimulator/Devices/A46362A9-C389-40DE-84F9-8DAADF2579AD/data/Containers/Data/Application/16CA2B7B-D0AC-4096-B8ED-88F2009DDEED/Documents
 
-The file /Users/jouhyeon/Library/Developer/CoreSimulator/Devices/A46362A9-C389-40DE-84F9-8DAADF2579AD/data/Containers/Data/Application/DE8E7DD4-34FC-41F7-A7DA-083E20FC85C1/Documents does not exist.
-➜  TextViewer git:(main) ✗ open /Users/jouhyeon/Library/Developer/CoreSimulator/Devices/A46362A9-C389-40DE-84F9-8DAADF2579AD/data/Containers/Data/Application/DE8E7DD4-34FC-41F7-A7DA-083E20FC85C1/Documents
+➜  textviewer git:(main) ✗ Last login: Tue Oct  4 10:27:04 on console
+➜  ~ git:(master) ✗ ls
+Applications        Movies              SQL                 oracle
+Desktop             Music               apah1.txt           projects
+Documents           Pictures            eclipse             user
+Downloads           Public              eclipse-workspace   usr
+Library             RustPython          git                 예전.txt
+➜  ~ git:(master) ✗ cd downloads
+➜  downloads git:(master) ✗ ls
+2021 컨트리뷰션 아카데미_프로젝트 가이드_정윤원.pdf
+57321346.html
+Hammerspoon-0.9.97.zip
+Hammerspoon.app
+IE002452730_STD.jpg
+IOS  참고파일
+KakaoTalk_Photo_2022-09-28-15-35-41.jpeg
+KakaoTalk_Photo_2022-09-28-15-35-50.jpeg
+SmoothMouse-1.0.10.zip
+SmoothMouse.pkg
+TextViewer
+Windows iso
+macsfancontrol.zip
+sheevergaming.html
+tutorial
+무제 폴더
+과거 청산
+입사지원서_양식_조우현.docx
+➜  downloads git:(master) ✗ cd textviewer
+➜  textviewer git:(main) ✗ ls
+README.md            TextViewerTests      sample2.txt
+TextViewer           TextViewerUITests
+TextViewer.xcodeproj sample.txt
+➜  textviewer git:(main) ✗ git add -u
+➜  textviewer git:(main) ✗ git commit "table view cell complete"
+error: pathspec 'table view cell complete' did not match any file(s) known to git
+➜  textviewer git:(main) ✗ git commit -m "table view cell complete"
+[main a42510d] table view cell complete
+ 6 files changed, 122 insertions(+), 42 deletions(-)
+ create mode 100644 TextViewer/TxtTableViewCell.swift
+➜  textviewer git:(main) git push origin main                    
+warning: redirecting to https://github.com/caskercasker/TextViewer/
+Enumerating objects: 19, done.
+Counting objects: 100% (19/19), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (11/11), done.
+Writing objects: 100% (11/11), 2.59 KiB | 2.59 MiB/s, done.
+Total 11 (delta 9), reused 0 (delta 0)
+remote: Resolving deltas: 100% (9/9), completed with 7 local objects.
+To http://github.com/caskercasker/TextViewer
+   fd12797..a42510d  main -> main
+➜  textviewer git:(main) open /Users/jouhyeon/Library/Developer/CoreSimulator/Devices/A46362A9-C389-40DE-84F9-8DAADF2579AD/data/Containers/Data/Application/16CA2B7B-D0AC-4096-B8ED-88F2009DDEED/Documents
 
-The file /Users/jouhyeon/Library/Developer/CoreSimulator/Devices/A46362A9-C389-40DE-84F9-8DAADF2579AD/data/Containers/Data/Application/DE8E7DD4-34FC-41F7-A7DA-083E20FC85C1/Documents does not exist.
-➜  TextViewer git:(main) ✗ open /Users/jouhyeon/Library/Developer/CoreSimulator/Devices/A46362A9-C389-40DE-84F9-8DAADF2579AD/data/Containers/Data/Application/594BF9FC-8615-4E02-9A60-B3E7158E0CE4/Documents
+➜  textviewer git:(main) ✗ Last login: Tue Oct  4 10:27:04 on console
+➜  ~ git:(master) ✗ ls
+Applications        Movies              SQL                 oracle
+Desktop             Music               apah1.txt           projects
+Documents           Pictures            eclipse             user
+Downloads           Public              eclipse-workspace   usr
+Library             RustPython          git                 예전.txt
+➜  ~ git:(master) ✗ cd downloads
+➜  downloads git:(master) ✗ ls
+2021 컨트리뷰션 아카데미_프로젝트 가이드_정윤원.pdf
+57321346.html
+Hammerspoon-0.9.97.zip
+Hammerspoon.app
+IE002452730_STD.jpg
+IOS  참고파일
+KakaoTalk_Photo_2022-09-28-15-35-41.jpeg
+KakaoTalk_Photo_2022-09-28-15-35-50.jpeg
+SmoothMouse-1.0.10.zip
+SmoothMouse.pkg
+TextViewer
+Windows iso
+macsfancontrol.zip
+sheevergaming.html
+tutorial
+무제 폴더
+과거 청산
+입사지원서_양식_조우현.docx
+➜  downloads git:(master) ✗ cd textviewer
+➜  textviewer git:(main) ✗ ls
+README.md            TextViewerTests      sample2.txt
+TextViewer           TextViewerUITests
+TextViewer.xcodeproj sample.txt
+➜  textviewer git:(main) ✗ git add -u
+➜  textviewer git:(main) ✗ git commit "table view cell complete"
+error: pathspec 'table view cell complete' did not match any file(s) known to git
+➜  textviewer git:(main) ✗ git commit -m "table view cell complete"
+[main a42510d] table view cell complete
+ 6 files changed, 122 insertions(+), 42 deletions(-)
+ create mode 100644 TextViewer/TxtTableViewCell.swift
+➜  textviewer git:(main) git push origin main                    
+warning: redirecting to https://github.com/caskercasker/TextViewer/
+Enumerating objects: 19, done.
+Counting objects: 100% (19/19), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (11/11), done.
+Writing objects: 100% (11/11), 2.59 KiB | 2.59 MiB/s, done.
+Total 11 (delta 9), reused 0 (delta 0)
+remote: Resolving deltas: 100% (9/9), completed with 7 local objects.
+To http://github.com/caskercasker/TextViewer
+   fd12797..a42510d  main -> main
+➜  textviewer git:(main) open /Users/jouhyeon/Library/Developer/CoreSimulator/Devices/A46362A9-C389-40DE-84F9-8DAADF2579AD/data/Containers/Data/Application/16CA2B7B-D0AC-4096-B8ED-88F2009DDEED/Documents
 
-➜  TextViewer git:(main) ✗ open /Users/jouhyeon/Library/Developer/CoreSimulator/Devices/A46362A9-C389-40DE-84F9-8DAADF2579AD/data/Containers/Data/Application/594BF9FC-8615-4E02-9A60-B3E7158E0CE4/Documents
+➜  textviewer git:(main) ✗ Last login: Tue Oct  4 10:27:04 on console
+➜  ~ git:(master) ✗ ls
+Applications        Movies              SQL                 oracle
+Desktop             Music               apah1.txt           projects
+Documents           Pictures            eclipse             user
+Downloads           Public              eclipse-workspace   usr
+Library             RustPython          git                 예전.txt
+➜  ~ git:(master) ✗ cd downloads
+➜  downloads git:(master) ✗ ls
+2021 컨트리뷰션 아카데미_프로젝트 가이드_정윤원.pdf
+57321346.html
+Hammerspoon-0.9.97.zip
+Hammerspoon.app
+IE002452730_STD.jpg
+IOS  참고파일
+KakaoTalk_Photo_2022-09-28-15-35-41.jpeg
+KakaoTalk_Photo_2022-09-28-15-35-50.jpeg
+SmoothMouse-1.0.10.zip
+SmoothMouse.pkg
+TextViewer
+Windows iso
+macsfancontrol.zip
+sheevergaming.html
+tutorial
+무제 폴더
+과거 청산
+입사지원서_양식_조우현.docx
+➜  downloads git:(master) ✗ cd textviewer
+➜  textviewer git:(main) ✗ ls
+README.md            TextViewerTests      sample2.txt
+TextViewer           TextViewerUITests
+TextViewer.xcodeproj sample.txt
+➜  textviewer git:(main) ✗ git add -u
+➜  textviewer git:(main) ✗ git commit "table view cell complete"
+error: pathspec 'table view cell complete' did not match any file(s) known to git
+➜  textviewer git:(main) ✗ git commit -m "table view cell complete"
+[main a42510d] table view cell complete
+ 6 files changed, 122 insertions(+), 42 deletions(-)
+ create mode 100644 TextViewer/TxtTableViewCell.swift
+➜  textviewer git:(main) git push origin main                    
+warning: redirecting to https://github.com/caskercasker/TextViewer/
+Enumerating objects: 19, done.
+Counting objects: 100% (19/19), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (11/11), done.
+Writing objects: 100% (11/11), 2.59 KiB | 2.59 MiB/s, done.
+Total 11 (delta 9), reused 0 (delta 0)
+remote: Resolving deltas: 100% (9/9), completed with 7 local objects.
+To http://github.com/caskercasker/TextViewer
+   fd12797..a42510d  main -> main
+➜  textviewer git:(main) open /Users/jouhyeon/Library/Developer/CoreSimulator/Devices/A46362A9-C389-40DE-84F9-8DAADF2579AD/data/Containers/Data/Application/16CA2B7B-D0AC-4096-B8ED-88F2009DDEED/Documents
 
-➜  TextViewer git:(main) ✗ open /Users/jouhyeon/Library/Developer/CoreSimulator/Devices/A46362A9-C389-40DE-84F9-8DAADF2579AD/data/Containers/Data/Application/594BF9FC-8615-4E02-9A60-B3E7158E0CE4/Documents
-
-The file /Users/jouhyeon/Library/Developer/CoreSimulator/Devices/A46362A9-C389-40DE-84F9-8DAADF2579AD/data/Containers/Data/Application/594BF9FC-8615-4E02-9A60-B3E7158E0CE4/Documents does not exist.
-➜  TextViewer git:(main) ✗ open /Users/jouhyeon/Library/Developer/CoreSimulator/Devices/A46362A9-C389-40DE-84F9-8DAADF2579AD/data/Containers/Data/Application/52356F9E-91A7-445F-A7D0-1AC12ACB0F62/Documents
+➜  textviewer git:(main) ✗ 

@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		791B021228E2A33B007DF059 /* UploadTxtFiles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 791B021128E2A33B007DF059 /* UploadTxtFiles.swift */; };
 		791B021428E2A4D0007DF059 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 791B021328E2A4D0007DF059 /* SecondViewController.swift */; };
-		791B021A28E2D5E3007DF059 /* sample2.txt in Resources */ = {isa = PBXBuildFile; fileRef = 791B021928E2D5E2007DF059 /* sample2.txt */; };
 		79227DFC28E128F900BBB6C7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79227DFB28E128F900BBB6C7 /* AppDelegate.swift */; };
 		79227DFE28E128F900BBB6C7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79227DFD28E128F900BBB6C7 /* SceneDelegate.swift */; };
 		79227E0028E128F900BBB6C7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79227DFF28E128F900BBB6C7 /* ViewController.swift */; };
@@ -22,7 +21,6 @@
 		79227E2228E128FC00BBB6C7 /* TextViewerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79227E2128E128FC00BBB6C7 /* TextViewerUITestsLaunchTests.swift */; };
 		794E3F2028ED44EE00D62CF7 /* NavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 794E3F1F28ED44EE00D62CF7 /* NavigationViewController.swift */; };
 		79D0781F28F3EE9700142383 /* iCloudViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79D0781E28F3EE9700142383 /* iCloudViewController.swift */; };
-		79E84C8628E1A70A006F05DB /* sample.txt in Resources */ = {isa = PBXBuildFile; fileRef = 79E84C8528E1A70A006F05DB /* sample.txt */; };
 		79F444A628EBC1CE008C50CE /* TxtTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79F444A528EBC1CE008C50CE /* TxtTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
@@ -47,7 +45,6 @@
 		7903362D28F3E20100671935 /* TextViewer.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TextViewer.entitlements; sourceTree = "<group>"; };
 		791B021128E2A33B007DF059 /* UploadTxtFiles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadTxtFiles.swift; sourceTree = "<group>"; };
 		791B021328E2A4D0007DF059 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
-		791B021928E2D5E2007DF059 /* sample2.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = sample2.txt; sourceTree = SOURCE_ROOT; };
 		79227DF828E128F900BBB6C7 /* TextViewer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TextViewer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		79227DFB28E128F900BBB6C7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		79227DFD28E128F900BBB6C7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -64,7 +61,6 @@
 		79227E2128E128FC00BBB6C7 /* TextViewerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextViewerUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		794E3F1F28ED44EE00D62CF7 /* NavigationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationViewController.swift; sourceTree = "<group>"; };
 		79D0781E28F3EE9700142383 /* iCloudViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iCloudViewController.swift; sourceTree = "<group>"; };
-		79E84C8528E1A70A006F05DB /* sample.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = sample.txt; sourceTree = SOURCE_ROOT; };
 		79F444A528EBC1CE008C50CE /* TxtTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TxtTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -155,8 +151,6 @@
 		79E84C8228E1A66B006F05DB /* raw */ = {
 			isa = PBXGroup;
 			children = (
-				791B021928E2D5E2007DF059 /* sample2.txt */,
-				79E84C8528E1A70A006F05DB /* sample.txt */,
 			);
 			path = raw;
 			sourceTree = "<group>";
@@ -267,8 +261,6 @@
 			files = (
 				79227E0B28E128FB00BBB6C7 /* LaunchScreen.storyboard in Resources */,
 				79227E0828E128FB00BBB6C7 /* Assets.xcassets in Resources */,
-				79E84C8628E1A70A006F05DB /* sample.txt in Resources */,
-				791B021A28E2D5E3007DF059 /* sample2.txt in Resources */,
 				79227E0328E128F900BBB6C7 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
